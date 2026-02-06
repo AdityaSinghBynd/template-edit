@@ -1,7 +1,6 @@
-export { EditorTabs } from './EditorTabs';
-export { UnifiedTextPanel } from './UnifiedTextPanel';
-export { ColorsPanel } from './ColorsPanel';
-export { LockedPanel } from './LockedPanel';
-export { PreviewPane } from './PreviewPane';
+export { ColorPickerPopup } from './ColorPickerPopup';
 export { FloatingEditor } from './FloatingEditor';
-export { TemplateEditorModal } from './TemplateEditorModal';
+export { GlobalThemePanel } from './GlobalThemePanel';
+export { OnboardingWizard } from './OnboardingWizard';
+export { PreviewPane } from './PreviewPane';
+export { SectionEditor } from './SectionEditor';
