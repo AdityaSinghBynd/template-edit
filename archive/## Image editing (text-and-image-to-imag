@@ -1,0 +1,9 @@
+## Image editing (text-and-image-to-image)
+
+Reminder: Make sure you have the necessary rights to any images you upload. Don't generate content that infringe on others' rights, including videos or images that deceive, harass, or harm. Your use of this generative AI service is subject to our [Prohibited Use Policy](https://policies.google.com/terms/generative-ai/use-policy).
+Provide an image and use text prompts to add, remove, or modify elements, change the style, or adjust the color grading.
+The following example demonstrates uploading base64 encoded images. For multiple images, larger payloads, and supported MIME types, check the [Image understanding](https://ai.google.dev/gemini-api/docs/image-understanding) page.
+
+```
+base64
+```

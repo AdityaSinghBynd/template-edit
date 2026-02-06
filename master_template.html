@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>{{companyName}} Daily Newsletter</title>
+    <!--
+  ╔═══════════════════════════════════════════════════════════════════════════════╗
+  ║                    MASTER NEWSLETTER TEMPLATE v3.0                            ║
+  ╠═══════════════════════════════════════════════════════════════════════════════╣
+  ║ This template contains ALL possible sections. Enable/disable by:              ║
+  ║ 1. Commenting out unwanted sections                                           ║
+  ║ 2. Or use config JSON to toggle sections programmatically                     ║
+  ╠═══════════════════════════════════════════════════════════════════════════════╣
+  ║ CONFIGURABLE COLORS (search & replace):                                       ║
+  ║ • {{color.accent}}     = #008689 (brand/accent color)                        ║
+  ║ • {{color.text}}       = #000000 (primary text)                              ║
+  ║ • {{color.textSub}}    = #4E5971 (secondary text)                            ║
+  ║ • {{color.bgDate}}     = #EBF1F3 (date bar background)                       ║
+  ║ • {{color.border}}     = #F1F1F0 (section borders)                           ║
+  ║ • {{color.borderAcc}}  = #008689 (accent border - underlines)                ║
+  ╚═══════════════════════════════════════════════════════════════════════════════╝
+  -->
+</head>
+
+<body
+    style="font-family:Arial,sans-serif;background-color:#fff;margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%">
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════════
+     OUTER WRAPPER TABLE
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="background-color:#fff">
+        <tbody>
+            <tr>
+                <td style="padding:0" align="center">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="800"
+                        style="width:800px;background-color:#fff">
+                        <tbody>
+
+                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: HEADER (BANNER IMAGE)
+     CONFIG: header.type === 'banner_image'
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+                            <tr>
+                                <td style="padding:0;line-height:0;font-size:0" align="center">
+                                    <a href="https://www.bynd.ai" target="_blank" style="display:block">
+                                        <img alt="Bynd Intelligence"
+                                            src="https://byndpdfstorage.blob.core.windows.net/alerts-logos/investec_banner.png"
+                                            style="display:block;border:1px solid #f1f1f0;width:800px;max-width:100%;height:auto"
+                                            width="800">
+                                    </a>
+                                </td>
+                            </tr>
+                            <!-- END SECTION: HEADER (BANNER IMAGE) -->
+
+                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: HEADER (TEXT LOGO) - ALTERNATIVE
+     CONFIG: header.type === 'text_logo'
+     UNCOMMENT TO USE INSTEAD OF BANNER IMAGE
+     ═══════════════════════════════════════════════════════════════════════════════
+<tr>
+  <td style="padding:24px;background-color:#fff" align="left">
+    <p style="margin:0;padding:0;font-size:28px;color:#1e40af;font-weight:600;line-height:36px">
+      HDFC Capital
+    </p>
+  </td>
+</tr>
+-->
+                            <!-- END SECTION: HEADER (TEXT LOGO) -->
+
+                            <tr>
+                                <td style="height:16px;line-height:16px;font-size:16px"></td>
+                            </tr>
+
+                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     MAIN CONTENT WRAPPER (with border)
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+                            <tr>
+                                <td
+                                    style="background-color:#fff;border-left:1px solid #f1f1f0;border-right:1px solid #f1f1f0;border-bottom:1px solid #f1f1f0">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <tbody>
+
+                                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: DATE BAR
+     CONFIG: dateBar.enabled
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+                                            <tr>
+                                                <td style="background-color:#EBF1F3;padding:4px 24px">
+                                                    <p
+                                                        style="margin:0;padding:0;font-size:17px;color:#000;font-weight:400;line-height:18px">
+                                                        Friday, 16 January 2026
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <!-- END SECTION: DATE BAR -->
+
+                                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: GREETING
+     CONFIG: greeting.enabled
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+                                            <tr>
+                                                <td style="background-color:#fff;padding:16px 24px">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding:0">
+                                                                    <p
+                                                                        style="margin:0 0 16px 0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#008689;font-weight:600;line-height:27px">
+                                                                        <i>Good Morning,</i>
+                                                                    </p>
+
+                                                                    <!-- SECTION: GREETING INTRO - OPTIONAL -->
+                                                                    <!-- CONFIG: greeting.showIntro -->
+                                                                    <p
+                                                                        style="margin:0 0 16px 0;padding:0;font-size:16px;font-weight:200;line-height:19px">
+                                                                        <i>Welcome to your daily AI-generated
+                                                                            newsletter. Today's edition covers the
+                                                                            latest developments across your tracked
+                                                                            companies, key industry topics, and relevant
+                                                                            market movements.</i>
+                                                                    </p>
+                                                                    <!-- END SECTION: GREETING INTRO -->
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- END SECTION: GREETING -->
+
+                                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: HEADLINES (SUMMARY VIEW)
+     CONFIG: sections.headlines.enabled
+     DUPLICATABLE: true - Can have multiple headline sections with different filters
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+                                            <tr>
+                                                <td style="background-color:#fff;padding:24px">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation" width="100%">
+                                                        <tbody>
+
+                                                            <!-- Headlines Section Title -->
+                                                            <tr>
+                                                                <td style="padding:0 0 16px 0">
+                                                                    <p
+                                                                        style="margin:0;padding:0;font-size:21px;color:#008689;font-weight:600;line-height:30px">
+                                                                        Today's headlines
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <!-- Headlines Category: Companies -->
+                                                            <tr>
+                                                                <td
+                                                                    style="padding:0 0 8px 0;border-bottom:2px solid #F1F1F0">
+                                                                    <p
+                                                                        style="margin:0;padding:0;font-size:17px;font-family:Georgia,serif;color:#000;font-weight:600;line-height:24px">
+                                                                        Companies
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <!-- Sub-category Header (Optional) -->
+                                                            <tr>
+                                                                <td style="padding:16px 0 8px 0">
+                                                                    <p
+                                                                        style="margin:0;padding:0;font-size:17px;font-family:Georgia,serif;color:#008689;font-weight:600;text-transform:uppercase;line-height:21px">
+                                                                        AI & ML Updates
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <!-- Headline Item 1 - Single Source -->
+                                                            <tr>
+                                                                <td style="padding:8px 0">
+                                                                    <p
+                                                                        style="margin:0;padding:0;font-size:17px;color:#4E5971;font-weight:600;line-height:21px">
+                                                                        <a href="https://example.com/article1"
+                                                                            style="color:#4E5971;text-decoration:underline">
+                                                                            OpenAI launches ChatGPT Translate web tool
+                                                                            for 50+ languages
+                                                                        </a>
+                                                                    </p>
+                                                                    <p
+                                                                        style="margin:4px 0 0 0;padding:0;font-size:17px;line-height:16px">
+                                                                        <a href="https://livemint.com"
+                                                                            style="color:#008689;text-decoration:none">Mint
+                                                                            (Livemint)</a>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <!-- Headline Item 2 - Multiple Sources -->
+                                                            <tr>
+                                                                <td style="padding:8px 0">
+                                                                    <p
+                                                                        style="margin:0;padding:0;font-size:17px;color:#4E5971;font-weight:600;line-height:21px">
+                                                                        <a href="https://example.com/article2"
+                                                                            style="color:#4E5971;text-decoration:underline">
+                                                                            Google expands Gemini Personal Intelligence
+                                                                            and generative-AI features across Gmail and
+                                                                            apps
+                                                                        </a>
+                                                                    </p>
+                                                                    <p
+                                                                        style="margin:4px 0 0 0;padding:0;font-size:17px;line-height:16px">
+                                                                        <a href="https://businesstoday.in"
+                                                                            style="color:#008689;text-decoration:none">Business
+                                                                            Today</a>
+                                                                        <span style="color:#999"> | </span>
+                                                                        <a href="https://nytimes.com"
+                                                                            style="color:#008689;text-decoration:none">The
+                                                                            New York Times</a>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <!-- Headline Item 3 -->
+                                                            <tr>
+                                                                <td style="padding:8px 0">
+                                                                    <p
+                                                                        style="margin:0;padding:0;font-size:17px;color:#4E5971;font-weight:600;line-height:21px">
+                                                                        <a href="https://example.com/article3"
+                                                                            style="color:#4E5971;text-decoration:underline">
+                                                                            Meta winds down Supernatural VR fitness app
+                                                                            amid Reality Labs cuts
+                                                                        </a>
+                                                                    </p>
+                                                                    <p
+                                                                        style="margin:4px 0 0 0;padding:0;font-size:17px;line-height:16px">
+                                                                        <a href="https://bloomberg.com"
+                                                                            style="color:#008689;text-decoration:none">Bloomberg
+                                                                            News</a>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <!-- Headlines Category: Topics (Optional) -->
+                                                            <tr>
+                                                                <td
+                                                                    style="padding:24px 0 8px 0;border-bottom:2px solid #F1F1F0">
+                                                                    <p
+                                                                        style="margin:0;padding:0;font-size:17px;font-family:Georgia,serif;color:#000;font-weight:600;line-height:24px">
+                                                                        Topics
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <!-- Topic Headline -->
+                                                            <tr>
+                                                                <td style="padding:8px 0">
+                                                                    <p
+                                                                        style="margin:0;padding:0;font-size:17px;color:#4E5971;font-weight:600;line-height:21px">
+                                                                        <a href="https://example.com/topic1"
+                                                                            style="color:#4E5971;text-decoration:underline">
+                                                                            Rising input costs squeeze FMCG margins
+                                                                            despite resilient demand
+                                                                        </a>
+                                                                    </p>
+                                                                    <p
+                                                                        style="margin:4px 0 0 0;padding:0;font-size:17px;line-height:16px">
+                                                                        <a href="https://economictimes.com"
+                                                                            style="color:#008689;text-decoration:none">Economic
+                                                                            Times</a>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- END SECTION: HEADLINES -->
+
+                                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: COMPANIES (DETAILED VIEW WITH BULLETS)
+     CONFIG: sections.companies.enabled
+     DUPLICATABLE: true - Can have multiple (e.g., "Your Portfolio" + "Competitors")
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+                                            <tr>
+                                                <td style="background-color:#fff;padding:24px">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation" width="100%">
+                                                        <tbody>
+
+                                                            <!-- Section Title -->
+                                                            <tr>
+                                                                <td
+                                                                    style="padding:0 0 8px 0;border-bottom:2px solid #F1F1F0">
+                                                                    <p
+                                                                        style="margin:0;padding:0 0 4px 0;font-size:21px;font-family:Georgia,serif;color:#000;font-weight:600;line-height:30px">
+                                                                        Companies
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <!-- Sub-category Header (Optional) -->
+                                                            <tr>
+                                                                <td style="padding:20px 0 4px 0">
+                                                                    <p
+                                                                        style="margin:0;padding:0;font-size:17px;font-family:Georgia,serif;color:#008689;font-weight:600;text-transform:uppercase;line-height:24px">
+                                                                        Consumer Technology
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <!-- ═══════════════════════════════════════════════════════════════════════════
+         COMPANY BLOCK 1: Apple
+         ═══════════════════════════════════════════════════════════════════════════ -->
+                                                            <tr>
+                                                                <td style="background-color:#fff;padding:20px 0">
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        role="presentation" width="100%">
+                                                                        <tbody>
+
+                                                                            <!-- Company Header with Logo -->
+                                                                            <tr>
+                                                                                <td style="padding:0 0 12px 0">
+                                                                                    <table border="0" cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <!-- Company Logo -->
+                                                                                                <td
+                                                                                                    style="padding:0 8px 0 0;vertical-align:middle">
+                                                                                                    <img alt="Apple logo"
+                                                                                                        src="https://img.logo.dev/apple.com?token=pk_eMw84WGZTgWjQ_mTKSfirQ"
+                                                                                                        style="display:block;width:24px;height:24px;border-radius:4px;border:1px solid #f1f1f0"
+                                                                                                        width="24"
+                                                                                                        height="24">
+                                                                                                </td>
+                                                                                                <!-- Company Name (Clickable to website) -->
+                                                                                                <td
+                                                                                                    style="vertical-align:middle">
+                                                                                                    <a href="https://www.apple.com"
+                                                                                                        target="_blank"
+                                                                                                        style="text-decoration:none">
+                                                                                                        <p
+                                                                                                            style="margin:0;padding:0;font-size:17px;font-family:Georgia,serif;color:#000;font-weight:600;line-height:24px">
+                                                                                                            Tata
+                                                                                                            Consultancy
+                                                                                                            Services
+                                                                                                        </p>
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <!-- Article 1 -->
+                                                                            <tr>
+                                                                                <td style="padding:0 0 16px 0">
+                                                                                    <!-- Headline -->
+                                                                                    <p
+                                                                                        style="margin:0 0 8px 0;padding:0;font-size:17px;color:#4E5971;font-weight:600;line-height:21px">
+                                                                                        <a href="https://thehindu.com/article/tcs-visakhapatnam"
+                                                                                            style="color:#4E5971;text-decoration:underline">
+                                                                                            TCS to open Visakhapatnam
+                                                                                            delivery centre in January
+                                                                                            2026, plans permanent campus
+                                                                                            with major investment
+                                                                                        </a>
+                                                                                    </p>
+
+                                                                                    <!-- Bullet Points -->
+                                                                                    <table border="0" cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation" width="100%"
+                                                                                        style="margin:8px 0 0 0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        TCS will start
+                                                                                                        operations from
+                                                                                                        a rented
+                                                                                                        Delivery Centre
+                                                                                                        at Rushikonda
+                                                                                                        Hill No.3 in
+                                                                                                        January 2026,
+                                                                                                        with an initial
+                                                                                                        2,000 employees.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        The state
+                                                                                                        allotted
+                                                                                                        2,08,280 sq ft
+                                                                                                        in Millennium
+                                                                                                        Towers at
+                                                                                                        concessional
+                                                                                                        lease,
+                                                                                                        supporting the
+                                                                                                        temporary
+                                                                                                        facility and
+                                                                                                        operations
+                                                                                                        ramp-up.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        Government
+                                                                                                        granted 21.16
+                                                                                                        acres at IT Hill
+                                                                                                        No.3 for a
+                                                                                                        permanent
+                                                                                                        campus; TCS
+                                                                                                        plans a Rs1,370
+                                                                                                        crore investment
+                                                                                                        and about 12,000
+                                                                                                        jobs.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        The project
+                                                                                                        follows policy
+                                                                                                        incentives under
+                                                                                                        Andhra Pradesh
+                                                                                                        Industrial
+                                                                                                        Development
+                                                                                                        rules.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td
+                                                                                    style="height:16px;line-height:16px;font-size:16px">
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <!-- Article 2 (Same Company) -->
+                                                                            <tr>
+                                                                                <td style="padding:0 0 16px 0">
+                                                                                    <p
+                                                                                        style="margin:0 0 8px 0;padding:0;font-size:17px;color:#4E5971;font-weight:600;line-height:21px">
+                                                                                        <a href="https://khaleejtimes.com/tcs-gulf"
+                                                                                            style="color:#4E5971;text-decoration:underline">
+                                                                                            TCS expands Gulf footprint,
+                                                                                            deepening AI, payments and
+                                                                                            smart-grid capabilities
+                                                                                            across the Middle East
+                                                                                        </a>
+                                                                                    </p>
+                                                                                    <table border="0" cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation" width="100%"
+                                                                                        style="margin:8px 0 0 0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        TCS is
+                                                                                                        accelerating
+                                                                                                        digital
+                                                                                                        transformation
+                                                                                                        in the UAE and
+                                                                                                        Gulf, leveraging
+                                                                                                        AI, data
+                                                                                                        infrastructure
+                                                                                                        and
+                                                                                                        next-generation
+                                                                                                        services.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        TCS powers
+                                                                                                        70–80% of
+                                                                                                        payments
+                                                                                                        infrastructure
+                                                                                                        in the UAE
+                                                                                                        through its
+                                                                                                        Enterprise
+                                                                                                        Payment Hub.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- END COMPANY BLOCK 1 -->
+
+                                                            <!-- ═══════════════════════════════════════════════════════════════════════════
+         COMPANY BLOCK 2: Figma
+         ═══════════════════════════════════════════════════════════════════════════ -->
+                                                            <tr>
+                                                                <td
+                                                                    style="background-color:#fff;padding:20px 0;border-top:1px solid #f1f1f0">
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        role="presentation" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="padding:0 0 12px 0">
+                                                                                    <table border="0" cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td
+                                                                                                    style="padding:0 8px 0 0;vertical-align:middle">
+                                                                                                    <img alt="Figma logo"
+                                                                                                        src="https://img.logo.dev/figma.com?token=pk_eMw84WGZTgWjQ_mTKSfirQ"
+                                                                                                        style="display:block;width:24px;height:24px;border-radius:4px;border:1px solid #f1f1f0"
+                                                                                                        width="24"
+                                                                                                        height="24">
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="vertical-align:middle">
+                                                                                                    <a href="https://www.figma.com"
+                                                                                                        target="_blank"
+                                                                                                        style="text-decoration:none">
+                                                                                                        <p
+                                                                                                            style="margin:0;padding:0;font-size:17px;font-family:Georgia,serif;color:#000;font-weight:600;line-height:24px">
+                                                                                                            Figma
+                                                                                                        </p>
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="padding:0 0 16px 0">
+                                                                                    <p
+                                                                                        style="margin:0 0 8px 0;padding:0;font-size:17px;color:#4E5971;font-weight:600;line-height:21px">
+                                                                                        <a href="https://example.com/infosys-ai"
+                                                                                            style="color:#4E5971;text-decoration:underline">
+                                                                                            Figma launches AI-first
+                                                                                            platform for enterprise
+                                                                                            automation
+                                                                                        </a>
+                                                                                    </p>
+                                                                                    <table border="0" cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation" width="100%"
+                                                                                        style="margin:8px 0 0 0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        The new platform
+                                                                                                        integrates with
+                                                                                                        existing ERP
+                                                                                                        systems and
+                                                                                                        provides 40%
+                                                                                                        efficiency gains
+                                                                                                        in back-office
+                                                                                                        operations.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        Early adopters
+                                                                                                        include three
+                                                                                                        Fortune 500
+                                                                                                        companies in
+                                                                                                        banking and
+                                                                                                        retail sectors.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- END COMPANY BLOCK 2 -->
+
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- END SECTION: COMPANIES -->
+
+                                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: TOPICS (DETAILED VIEW)
+     CONFIG: sections.topics.enabled
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+                                            <tr>
+                                                <td style="background-color:#fff;padding:24px">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation" width="100%">
+                                                        <tbody>
+
+                                                            <!-- Section Title -->
+                                                            <tr>
+                                                                <td
+                                                                    style="padding:0 0 8px 0;border-bottom:2px solid #F1F1F0">
+                                                                    <p
+                                                                        style="margin:0;padding:0 0 4px 0;font-size:21px;font-family:Georgia,serif;color:#000;font-weight:600;line-height:30px">
+                                                                        Topics
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <!-- Topic Block 1 -->
+                                                            <tr>
+                                                                <td style="background-color:#fff;padding:20px 0">
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        role="presentation" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="padding:0 0 12px 0">
+                                                                                    <p
+                                                                                        style="margin:0;padding:0;font-size:17px;font-family:Georgia,serif;color:#008689;font-weight:600;line-height:24px">
+                                                                                        Climate Tech
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="padding:0 0 16px 0">
+                                                                                    <p
+                                                                                        style="margin:0 0 8px 0;padding:0;font-size:17px;color:#4E5971;font-weight:600;line-height:21px">
+                                                                                        <a href="https://example.com/ey-survey"
+                                                                                            style="color:#4E5971;text-decoration:underline">
+                                                                                            EY survey finds large
+                                                                                            productivity gap as AI
+                                                                                            adoption outpaces workforce
+                                                                                            readiness
+                                                                                        </a>
+                                                                                    </p>
+                                                                                    <table border="0" cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation" width="100%"
+                                                                                        style="margin:8px 0 0 0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        EY's 2025 Work
+                                                                                                        Reimagined
+                                                                                                        Survey finds
+                                                                                                        organisations
+                                                                                                        miss about 55%
+                                                                                                        of potential
+                                                                                                        productivity
+                                                                                                        gains due to AI
+                                                                                                        adoption and
+                                                                                                        workforce
+                                                                                                        readiness
+                                                                                                        disconnect.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        Nine in 10
+                                                                                                        employees use AI
+                                                                                                        at work, but
+                                                                                                        only 7% use it
+                                                                                                        to advance
+                                                                                                        workflows.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+
+                                                            <!-- Topic Block 2 -->
+                                                            <tr>
+                                                                <td
+                                                                    style="background-color:#fff;padding:20px 0;border-top:1px solid #f1f1f0">
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        role="presentation" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="padding:0 0 12px 0">
+                                                                                    <p
+                                                                                        style="margin:0;padding:0;font-size:17px;font-family:Georgia,serif;color:#008689;font-weight:600;line-height:24px">
+                                                                                        H-1B Visa Updates
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="padding:0 0 16px 0">
+                                                                                    <p
+                                                                                        style="margin:0 0 8px 0;padding:0;font-size:17px;color:#4E5971;font-weight:600;line-height:21px">
+                                                                                        <a href="https://example.com/h1b"
+                                                                                            style="color:#4E5971;text-decoration:underline">
+                                                                                            Administration tightens
+                                                                                            vetting and visa rules,
+                                                                                            adding social-media reviews
+                                                                                        </a>
+                                                                                    </p>
+                                                                                    <table border="0" cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation" width="100%"
+                                                                                        style="margin:8px 0 0 0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        A new online
+                                                                                                        presence review
+                                                                                                        took effect Dec
+                                                                                                        15, requiring
+                                                                                                        public social
+                                                                                                        media access for
+                                                                                                        H-1B, H-4, F, J
+                                                                                                        and M
+                                                                                                        applicants.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- END SECTION: TOPICS -->
+
+                                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: PEOPLE (DETAILED VIEW)
+     CONFIG: sections.people.enabled
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+                                            <tr>
+                                                <td style="background-color:#fff;padding:24px">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td
+                                                                    style="padding:0 0 8px 0;border-bottom:2px solid #F1F1F0">
+                                                                    <p
+                                                                        style="margin:0;padding:0 0 4px 0;font-size:21px;font-family:Georgia,serif;color:#000;font-weight:600;line-height:30px">
+                                                                        People
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- Person 1: Elon Musk -->
+                                                            <tr>
+                                                                <td style="background-color:#fff;padding:20px 0">
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        role="presentation" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="padding:0 0 12px 0">
+                                                                                    <table border="0" cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td
+                                                                                                    style="padding:0 8px 0 0;vertical-align:middle">
+                                                                                                    <img alt="Elon Musk"
+                                                                                                        src="/assets/people/elon_musk.png"
+                                                                                                        style="display:block;width:24px;height:24px;border-radius:12px;border:1px solid #f1f1f0;object-fit:cover"
+                                                                                                        width="24"
+                                                                                                        height="24">
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="vertical-align:middle">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:17px;font-family:Georgia,serif;color:#000;font-weight:600;line-height:24px">
+                                                                                                        Elon Musk
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="padding:0 0 16px 0">
+                                                                                    <p
+                                                                                        style="margin:0 0 8px 0;padding:0;font-size:17px;color:#4E5971;font-weight:600;line-height:21px">
+                                                                                        <a href="https://reuters.com/technology/elon-musk"
+                                                                                            style="color:#4E5971;text-decoration:underline">
+                                                                                            SpaceX's Starship completes
+                                                                                            first successful orbital
+                                                                                            flight, Musk announces Mars
+                                                                                            mission timeline
+                                                                                        </a>
+                                                                                    </p>
+                                                                                    <table border="0" cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation" width="100%"
+                                                                                        style="margin:8px 0 0 0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        The successful
+                                                                                                        orbital test
+                                                                                                        marks a major
+                                                                                                        milestone for
+                                                                                                        SpaceX's
+                                                                                                        interplanetary
+                                                                                                        ambitions.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        Musk confirmed
+                                                                                                        plans for
+                                                                                                        uncrewed Mars
+                                                                                                        cargo missions
+                                                                                                        beginning in
+                                                                                                        2028.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- Person 2: Narendra Modi -->
+                                                            <tr>
+                                                                <td style="background-color:#fff;padding:20px 0">
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        role="presentation" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="padding:0 0 12px 0">
+                                                                                    <table border="0" cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td
+                                                                                                    style="padding:0 8px 0 0;vertical-align:middle">
+                                                                                                    <img alt="Narendra Modi"
+                                                                                                        src="/assets/people/narendra_modi.png"
+                                                                                                        style="display:block;width:24px;height:24px;border-radius:12px;border:1px solid #f1f1f0;object-fit:cover"
+                                                                                                        width="24"
+                                                                                                        height="24">
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="vertical-align:middle">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:17px;font-family:Georgia,serif;color:#000;font-weight:600;line-height:24px">
+                                                                                                        Narendra Modi
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="padding:0 0 16px 0">
+                                                                                    <p
+                                                                                        style="margin:0 0 8px 0;padding:0;font-size:17px;color:#4E5971;font-weight:600;line-height:21px">
+                                                                                        <a href="https://economictimes.com/india-semiconductor"
+                                                                                            style="color:#4E5971;text-decoration:underline">
+                                                                                            PM Modi inaugurates India's
+                                                                                            first domestic chip fab
+                                                                                            facility in Gujarat,
+                                                                                            announces $10B investment
+                                                                                        </a>
+                                                                                    </p>
+                                                                                    <table border="0" cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation" width="100%"
+                                                                                        style="margin:8px 0 0 0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        The facility in
+                                                                                                        Dholera will
+                                                                                                        manufacture 28nm
+                                                                                                        and 45nm chips
+                                                                                                        for automotive
+                                                                                                        and IoT
+                                                                                                        applications.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="padding:0 0 6px 0;vertical-align:top"
+                                                                                                    width="16">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        •</p>
+                                                                                                </td>
+                                                                                                <td
+                                                                                                    style="padding:0 0 6px 0;vertical-align:top">
+                                                                                                    <p
+                                                                                                        style="margin:0;padding:0;font-size:16px;font-family:Verdana,sans-serif;color:#4E5971;line-height:19px">
+                                                                                                        The initiative
+                                                                                                        is part of
+                                                                                                        India's broader
+                                                                                                        push for
+                                                                                                        semiconductor
+                                                                                                        self-reliance by
+                                                                                                        2030.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- END SECTION: PEOPLE -->
+
+                                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: DIVIDER
+     CONFIG: sections.divider.enabled
+     DUPLICATABLE: true
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+                                            <tr>
+                                                <td style="padding:0 24px">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td
+                                                                    style="border-top:2px solid #F1F1F0;height:1px;line-height:1px;font-size:1px">
+                                                                    &nbsp;</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- END SECTION: DIVIDER -->
+
+                                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: RESEARCH REPORTS
+     CONFIG: sections.research.enabled
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+                                            <tr>
+                                                <td style="background-color:#fff;padding:24px">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td
+                                                                    style="border-top:2px solid #F1F1F0;padding:16px 0 0 0">
+                                                                    <p
+                                                                        style="margin:0 0 4px 0;padding:0;font-size:7pt;color:#008689;font-weight:600;line-height:10pt">
+                                                                        Research Reports
+                                                                    </p>
+                                                                    <p
+                                                                        style="margin:0 0 12px 0;padding:0;font-size:7pt;color:#4E5971;font-weight:600;font-style:italic;line-height:10pt">
+                                                                        Access to our recent publications
+                                                                    </p>
+
+                                                                    <!-- Report Links -->
+                                                                    <p
+                                                                        style="margin:0 0 6px 0;padding:0;font-size:7pt;line-height:10pt">
+                                                                        <span
+                                                                            style="color:#008689;text-decoration:underline;font-weight:600">HCLT
+                                                                            Q1FY26: Margins surprise negatively</span>
+                                                                        (<a href="https://example.com/report1"
+                                                                            style="color:#000;font-weight:600;text-decoration:none;border-bottom:1px solid #008689"
+                                                                            target="_blank">Link</a>)
+                                                                    </p>
+                                                                    <p
+                                                                        style="margin:0 0 6px 0;padding:0;font-size:7pt;line-height:10pt">
+                                                                        <span
+                                                                            style="color:#008689;text-decoration:underline;font-weight:600">IT
+                                                                            Services: ISG-One: Discretionary deals
+                                                                            continue to be elusive</span>
+                                                                        (<a href="https://example.com/report2"
+                                                                            style="color:#000;font-weight:600;text-decoration:none;border-bottom:1px solid #008689"
+                                                                            target="_blank">Link</a>)
+                                                                    </p>
+                                                                    <p
+                                                                        style="margin:0 0 6px 0;padding:0;font-size:7pt;line-height:10pt">
+                                                                        <span
+                                                                            style="color:#008689;text-decoration:underline;font-weight:600">TCS:
+                                                                            Demand uncertainties continue to
+                                                                            linger</span>
+                                                                        (<a href="https://example.com/report3"
+                                                                            style="color:#000;font-weight:600;text-decoration:none;border-bottom:1px solid #008689"
+                                                                            target="_blank">Link</a>)
+                                                                    </p>
+                                                                    <p
+                                                                        style="margin:0 0 6px 0;padding:0;font-size:7pt;line-height:10pt">
+                                                                        <span
+                                                                            style="color:#008689;text-decoration:underline;font-weight:600">India
+                                                                            Telecom: Tariff hikes every year might not
+                                                                            be a slam dunk</span>
+                                                                        (<a href="https://example.com/report4"
+                                                                            style="color:#000;font-weight:600;text-decoration:none;border-bottom:1px solid #008689"
+                                                                            target="_blank">Link</a>)
+                                                                    </p>
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- END SECTION: RESEARCH REPORTS -->
+
+                                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: CUSTOM HTML BLOCK - OPTIONAL
+     CONFIG: sections.customHtml.enabled
+     Use for: promotions, announcements, special content
+     DUPLICATABLE: true
+     ═══════════════════════════════════════════════════════════════════════════════
+<tr>
+  <td style="background-color:#f0f9ff;padding:24px">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+    <tbody>
+    <tr>
+      <td style="padding:0">
+        <p style="margin:0 0 8px 0;font-size:17px;color:#1e40af;font-weight:600">
+          📢 Special Announcement
+        </p>
+        <p style="margin:0;font-size:17px;font-family:Verdana,sans-serif;color:#4E5971;line-height:20px">
+          Join us for our quarterly webinar on AI in Finance. 
+          <a href="https://example.com/register" style="color:#1e40af">Register here →</a>
+        </p>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+  </td>
+</tr>
+-->
+                                            <!-- END SECTION: CUSTOM HTML BLOCK -->
+
+                                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: FOOTER (TEXT + CONTACTS)
+     CONFIG: footer.type === 'text_contacts'
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+                                            <tr>
+                                                <td style="background-color:#fff;padding:24px">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td
+                                                                    style="border-top:2px solid #F1F1F0;border-bottom:2px solid #F1F1F0;padding:16px 0 0 0">
+                                                                    <p
+                                                                        style="margin:0 0 12px 0;padding:0;font-size:8pt;color:#4E5971;font-weight:600;line-height:11pt">
+                                                                        Have a great day!
+                                                                    </p>
+                                                                    <p
+                                                                        style="margin:0 0 12px 0;padding:0;font-size:7pt;color:#008689;font-weight:600;line-height:10pt">
+                                                                        Bynd Intelligence Team
+                                                                    </p>
+
+                                                                    <!-- Contact Grid (3 columns) -->
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        role="presentation" width="100%"
+                                                                        style="font-size:7pt;line-height:10pt;color:#000">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <!-- Contact 1 -->
+                                                                                <td style="padding:0 4px 8px 0;vertical-align:top"
+                                                                                    width="33%">
+                                                                                    <p
+                                                                                        style="margin:0;padding:0;font-weight:600;color:#000;line-height:10pt">
+                                                                                        Nitin Padmanabhan</p>
+                                                                                    <p
+                                                                                        style="margin:0;padding:0;line-height:10pt">
+                                                                                        Tel: +91 (0) 22 6136 7427</p>
+                                                                                    <a href="mailto:nitin@company.com"
+                                                                                        style="color:#008689;text-decoration:underline;line-height:10pt">nitin@company.com</a>
+                                                                                </td>
+                                                                                <!-- Contact 2 -->
+                                                                                <td style="padding:0 4px 8px 4px;vertical-align:top"
+                                                                                    width="33%">
+                                                                                    <p
+                                                                                        style="margin:0;padding:0;font-weight:600;color:#000;line-height:10pt">
+                                                                                        Nayan Thakker</p>
+                                                                                    <p
+                                                                                        style="margin:0;padding:0;line-height:10pt">
+                                                                                        Tel: +91 (0) 22 6849 7527</p>
+                                                                                    <a href="mailto:nayan@company.com"
+                                                                                        style="color:#008689;text-decoration:underline;line-height:10pt">nayan@company.com</a>
+                                                                                </td>
+                                                                                <!-- Contact 3 -->
+                                                                                <td style="padding:0 0 8px 4px;vertical-align:top"
+                                                                                    width="33%">
+                                                                                    <p
+                                                                                        style="margin:0;padding:0;font-weight:600;color:#000;line-height:10pt">
+                                                                                        Vivek Desai</p>
+                                                                                    <p
+                                                                                        style="margin:0;padding:0;line-height:10pt">
+                                                                                        Tel: +91 (0) 22 6849 7526</p>
+                                                                                    <a href="mailto:vivek@company.com"
+                                                                                        style="color:#008689;text-decoration:underline;line-height:10pt">vivek@company.com</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- END SECTION: FOOTER (TEXT + CONTACTS) -->
+
+                                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: FOOTER (IMAGE BANNER) - ALTERNATIVE
+     CONFIG: footer.type === 'image_banner'
+     UNCOMMENT TO USE INSTEAD OF TEXT FOOTER
+     ═══════════════════════════════════════════════════════════════════════════════
+<tr>
+  <td style="padding:0;line-height:0;font-size:0" align="center">
+    <a href="https://www.company.com" target="_blank" style="display:block">
+      <img alt="Company Footer" 
+           src="https://example.com/footer-banner.png" 
+           style="display:block;width:800px;max-width:100%;height:auto" 
+           width="800">
+    </a>
+  </td>
+</tr>
+-->
+                                            <!-- END SECTION: FOOTER (IMAGE BANNER) -->
+
+                                            <!-- ═══════════════════════════════════════════════════════════════════════════════
+     SECTION: DISCLAIMER
+     CONFIG: disclaimer.enabled
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+                                            <tr>
+                                                <td style="background-color:#fff;padding:24px">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="font-size:5pt;line-height:8pt;color:#000">
+                                                                    <p style="margin:0 0 8px 0;padding:0">
+                                                                        <span style="font-weight:600">IMPORTANT
+                                                                            NOTICE:</span> This is an AI generated
+                                                                        product. Please use discretion.
+                                                                        We do not take responsibility for the accuracy
+                                                                        of the newsletter. This communication is
+                                                                        confidential for the
+                                                                        information of the addressee only and may not be
+                                                                        reproduced in whole or in part, nor disclosed to
+                                                                        another party.
+                                                                    </p>
+                                                                    <p style="margin:0 0 8px 0;padding:0">
+                                                                        If you are not the intended recipient of this
+                                                                        e-mail, please notify the sender immediately and
+                                                                        delete this message.
+                                                                    </p>
+                                                                    <p style="margin:0;padding:0">
+                                                                        <a href="{{unsubscribeLink}}"
+                                                                            style="color:#008689;text-decoration:underline">Unsubscribe</a>
+                                                                        |
+                                                                        <a href="https://www.company.com/privacy"
+                                                                            style="color:#008689;text-decoration:underline">Privacy
+                                                                            Policy</a>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- END SECTION: DISCLAIMER -->
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END MAIN CONTENT WRAPPER -->
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- END OUTER WRAPPER -->
+
+</body>
+
+</html>

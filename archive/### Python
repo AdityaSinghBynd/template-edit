@@ -1,0 +1,39 @@
+### Python
+```
+from google import genai from google.genai import types from PIL import Image from io import BytesIO client = genai.Client() response = client.models.generate_images( model='imagen-4.0-generate-001', prompt='Robot holding a red skateboard', config=types.GenerateImagesConfig( number_of_images= 4, ) ) for generated_image in response.generated_images: generated_image.image.show()
+```
+
+
+```
+from google import genai from google.genai import types from PIL import Image from io import BytesIO client = genai.Client() response = client.models.generate_images( model='imagen-4.0-generate-001', prompt='Robot holding a red skateboard', config=types.GenerateImagesConfig( number_of_images= 4, ) ) for generated_image in response.generated_images: generated_image.image.show()
+```
+
+### JavaScript
+```
+import { GoogleGenAI } from "@google/genai"; import * as fs from "node:fs"; async function main() { const ai = new GoogleGenAI({}); const response = await ai.models.generateImages({ model: 'imagen-4.0-generate-001', prompt: 'Robot holding a red skateboard', config: { numberOfImages: 4, }, }); let idx = 1; for (const generatedImage of response.generatedImages) { let imgBytes = generatedImage.image.imageBytes; const buffer = Buffer.from(imgBytes, "base64"); fs.writeFileSync(`imagen-${idx}.png`, buffer); idx++; } } main();
+```
+
+
+```
+import { GoogleGenAI } from "@google/genai"; import * as fs from "node:fs"; async function main() { const ai = new GoogleGenAI({}); const response = await ai.models.generateImages({ model: 'imagen-4.0-generate-001', prompt: 'Robot holding a red skateboard', config: { numberOfImages: 4, }, }); let idx = 1; for (const generatedImage of response.generatedImages) { let imgBytes = generatedImage.image.imageBytes; const buffer = Buffer.from(imgBytes, "base64"); fs.writeFileSync(`imagen-${idx}.png`, buffer); idx++; } } main();
+```
+
+### Go
+```
+package main import ( "context" "fmt" "os" "google.golang.org/genai" ) func main() { ctx := context.Background() client, err := genai.NewClient(ctx, nil) if err != nil { log.Fatal(err) } config := &genai.GenerateImagesConfig{ NumberOfImages: 4, } response, _ := client.Models.GenerateImages( ctx, "imagen-4.0-generate-001", "Robot holding a red skateboard", config, ) for n, image := range response.GeneratedImages { fname := fmt.Sprintf("imagen-%d.png", n) _ = os.WriteFile(fname, image.Image.ImageBytes, 0644) } }
+```
+
+
+```
+package main import ( "context" "fmt" "os" "google.golang.org/genai" ) func main() { ctx := context.Background() client, err := genai.NewClient(ctx, nil) if err != nil { log.Fatal(err) } config := &genai.GenerateImagesConfig{ NumberOfImages: 4, } response, _ := client.Models.GenerateImages( ctx, "imagen-4.0-generate-001", "Robot holding a red skateboard", config, ) for n, image := range response.GeneratedImages { fname := fmt.Sprintf("imagen-%d.png", n) _ = os.WriteFile(fname, image.Image.ImageBytes, 0644) } }
+```
+
+### REST
+```
+curl -X POST \ "https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict" \ -H "x-goog-api-key: $GEMINI_API_KEY" \ -H "Content-Type: application/json" \ -d '{ "instances": [ { "prompt": "Robot holding a red skateboard" } ], "parameters": { "sampleCount": 4 } }'
+```
+
+
+```
+curl -X POST \ "https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict" \ -H "x-goog-api-key: $GEMINI_API_KEY" \ -H "Content-Type: application/json" \ -d '{ "instances": [ { "prompt": "Robot holding a red skateboard" } ], "parameters": { "sampleCount": 4 } }'
+```
