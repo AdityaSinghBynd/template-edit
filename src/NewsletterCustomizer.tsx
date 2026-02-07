@@ -483,7 +483,8 @@ Requirements:
 Generate a high-quality professional banner image.`;
 
       // Use Gemini 2.0 Flash Experimental with image generation
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=AIzaSyAVTktCz_mCaiKoKTwKZyLmQrtRRZSzGGY`, {
+      const apiKey = import.meta.env.VITE_GEMINI_API_KEY ?? '';
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${apiKey}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

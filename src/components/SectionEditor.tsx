@@ -152,7 +152,7 @@ const BannerEditor = ({ config, updateConfig }) => {
     const fileInputRef = React.useRef<HTMLInputElement>(null);
     const logoFileInputRef = React.useRef<HTMLInputElement>(null);
 
-    const GEMINI_API_KEY = 'AIzaSyCa8eEjR3FExmFgzQETD96S7JrXnD789eQ';
+    const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY ?? '';
 
     const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0];

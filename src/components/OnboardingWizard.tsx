@@ -421,7 +421,7 @@ export const OnboardingWizard: React.FC<OnboardingWizardProps> = ({ onComplete, 
     );
 
     const renderBrandSetup = () => {
-        const GEMINI_API_KEY = 'AIzaSyCa8eEjR3FExmFgzQETD96S7JrXnD789eQ';
+        const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY ?? '';
 
         const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
             const file = e.target.files?.[0];
